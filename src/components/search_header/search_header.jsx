@@ -1,25 +1,21 @@
-import styles from "./search_header.module.css";
-
-import React, { useRef } from "react";
+import styles from './search_header.module.css';
+import React, { useRef } from 'react';
 
 const SearchHeader = ({ onSearch }) => {
   const inputRef = useRef();
-
   const handleSearch = () => {
     const value = inputRef.current.value;
     onSearch(value);
   };
-
   const onClick = () => {
     handleSearch();
   };
 
-  const onKeyPress = (e) => {
-    if (e.key === "Enter") {
+  const onKeyPress = event => {
+    if (event.key === 'Enter') {
       handleSearch();
     }
   };
-
   return (
     <header className={styles.header}>
       <div className={styles.logo}>

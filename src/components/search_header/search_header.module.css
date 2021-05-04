@@ -1,8 +1,8 @@
 .header {
   display: flex;
   height: 4rem;
-  padding: 0.8rem 1rem;
-  background-color: black;
+  padding: 0.8em 1em;
+  background: black;
   color: white;
 }
 
@@ -19,7 +19,7 @@
 }
 
 .button {
-  background-color: darkgray;
+  background-color: darkgrey;
   outline: 0;
 }
 
